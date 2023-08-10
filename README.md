@@ -1,23 +1,62 @@
-# TensorFlow Lite Object Detection on Android and Raspberry Pi
-Train your own TensorFlow Lite object detection models and run them on the Raspberry Pi, Android phones, and other edge devices! 
+## Title: Child Seat Localization
+
+## Goal
+Build AI solution for child seat localization in the passenger vehicle
+
+## Problem statement
+Localization of the child seat in the passenger vehicle enable the buisness to high-level services
+and usecases.
+
+## Data set
+The data set shall be https://sviro.kl.dfki.de/data/ or any appropriate data set.
+<a href="https://sviro.kl.dfki.de/data/" target="_parent"></a>
+
+## Solution scope
+Proposed software solution shall / may
+* Instrument the data set
+* State or use prior work from academic / industry
+* Use appropriate state of the art AI algorithm (preferably deep learning based)
+* Enhance the data with synthetic
+* Reasonable accuracy on the given scope of time to develop
+* Rationales for the current Approach to enhance
+* Use any appropriate open source libraries and framework
+* Focus more on the algorithm than the overall application
+  
+## Bonus Challenge (optional)
+Extend the current dataset with synthetic data inserting smoke inside the vehicle and
+implement an AI smoke detection system.
+
+## Delivery
+The solution shall be presented GitHub / GitLab code with optional supported document in
+email.
 
 <p align="center">
    <img src="doc/BSR_demo.gif">
 </p>
 
-Get started with training on Google Colab by clicking the icon below, or [click here to go straight to the YouTube video that provides step-by-step instructions](https://youtu.be/XZ7FYAMCc4M).
 
 <a href="https://colab.research.google.com/github/francineimorais/bh_assignment/blob/main/yolo_fire_detection.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 ## Introduction
-TensorFlow Lite is an optimized framework for deploying lightweight deep learning models on resource-constrained edge devices. TensorFlow Lite models have faster inference time and require less processing power than regular TensorFlow models, so they can be used to obtain faster performance in realtime applications. 
 
-This guide provides step-by-step instructions for how train a custom TensorFlow Object Detection model, convert it into an optimized format that can be used by TensorFlow Lite, and run it on edge devices like the Raspberry Pi. It also provides Python code for running TensorFlow Lite models to perform detection on images, videos, web streams, or webcam feeds.
+Existem diversos frameworks que disponibilizam deep learning models pré-treinados e que podem ser customizados para tarefas específicas. Como exemplo de frameworks temos [TensorFlow Lite] - LINK PARA O TENSORFLOW  e [YoLo] - LINK PARA O YOLO
 
-## Step 1. Train TensorFlow Lite Models
+TensorFlow Lite: is an optimized framework for deploying lightweight deep learning models on resource-constrained edge devices. TensorFlow Lite models have faster inference time and require less processing power than regular TensorFlow models, so they can be used to obtain faster performance in realtime applications. 
+
+YoLo: Descrição do YoLO
+
+This guide provides step-by-step instructions for how train a custom YoLO Object Detection model.
+Lembrando que é possível exportar o modelo para outros formatos
+https://docs.ultralytics.com/modes/export/#arguments
+
+Mesmo existindo muitos materiais interessantes que explicam em detalhes treinar modelos em TensorFlow Lite, optamos escolher o YoLo apenas por questões de simplicidade de código. Existem materiais que apresentam comparação de performance, porém isso está além do escopo desse projeto.
+
+Também por questões de simplicidade o código de inferência considera apenas imagens e não vídeos. Porém no caso da YoLo esse ajuste é simples, corresponde à adição de poucas linhas de código.
+
+## Step 1. Train YoLo Models
 ### Using Google Colab (recommended)
 
-The easiest way to train, convert, and export a TensorFlow Lite model is using Google Colab. Colab provides you with a free GPU-enabled virtual machine on Google's servers that comes pre-installed with the libraries and packages needed for training.
+The easiest way to train, convert, and export a YoLo model is using Google Colab. Colab provides you with a free GPU-enabled virtual machine on Google's servers that comes pre-installed with the libraries and packages needed for training.
 
 I wrote a [Google Colab notebook](./Train_TFLite2_Object_Detction_Model.ipynb) that can be used to train custom TensorFlow Lite models. It goes through the process of preparing data, configuring a model for training, training the model, running it on test images, and exporting it to a downloadable TFLite format so you can deploy it to your own device. It makes training a custom TFLite model as easy as uploading an image dataset and clicking Play on a few blocks of code!
 
