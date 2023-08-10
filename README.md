@@ -58,35 +58,17 @@ Também por questões de simplicidade o código de inferência considera apenas 
 
 The easiest way to train, convert, and export a YoLo model is using Google Colab. Colab provides you with a free GPU-enabled virtual machine on Google's servers that comes pre-installed with the libraries and packages needed for training.
 
-I wrote a [Google Colab notebook](./Train_TFLite2_Object_Detction_Model.ipynb) that can be used to train custom TensorFlow Lite models. It goes through the process of preparing data, configuring a model for training, training the model, running it on test images, and exporting it to a downloadable TFLite format so you can deploy it to your own device. It makes training a custom TFLite model as easy as uploading an image dataset and clicking Play on a few blocks of code!
+I wrote a [Google Colab notebook](./yolo_fire_detection.ipynb) that can be used to train custom YoLo models. It goes through the process of preparing data, selecting a model for training, training the model, running it on test images. It makes training a custom YoLo model as easy as uploading an image dataset and clicking Play on a few blocks of code!
 
-<a href="https://colab.research.google.com/github/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi/blob/master/Train_TFLite2_Object_Detction_Model.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+<a href="https://colab.research.google.com/github/francineimorais/bh_assignment/blob/main/yolo_fire_detection.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
-Open the Colab notebook in your browser by clicking the icon above. Work through the instructions in the notebook to start training your own model. Once it's trained and exported, visit the [Setup TFLite Runtime Environment](#step-2-setup-tflite-runtime-environment-on-your-device) section to learn how to deploy it on your PC, Raspberry Pi, Android phone, or other edge devices.
+Open the Colab notebook in your browser by clicking the icon above. Work through the instructions in the notebook to start training your own model. Once it's trained and exported, visit the [Setup TFLite Runtime Environment](#step-2-setup-tflite-runtime-environment-on-your-device) section to learn how export to other formats.
 
-### Using a Local PC
-The old version of this guide shows how to set up a TensorFlow training environment locally on your PC. Be warned: it's a lot of work, and the guide is outdated. [Here's a link to the local training guide.](doc/local_training_guide.md)
-
-## Step 2. Setup TFLite Runtime Environment on Your Device
-Once you have a trained `.tflite` model, the next step is to deploy it on a device like a computer, Raspberry Pi, or Android phone. To run the model, you'll need to install the TensorFlow or the TensorFlow Lite Runtime on your device and set up the Python environment and directory structure to run your application in. The [deploy_guides](deploy_guides) folder in this repository has step-by-step guides showing how to set up a TensorFlow environment on several different devices. Links to the guides are given below.
+## Step 2. data preparation
 
 ### Raspberry Pi
 Follow the [Raspberry Pi setup guide](deploy_guides/Raspberry_Pi_Guide.md) to install TFLite Runtime on a Raspberry Pi 3 or 4 and run a TensorFlow Lite model. This guide also shows how to use the Google Coral USB Accelerator to greatly increase the speed of quantized models on the Raspberry Pi.
 
-### Windows
-Follow the instructions in the [Windows TFLite guide](deploy_guides/Windows_TFLite_Guide.md) to set up TFLite Runtime on your Windows PC using Anaconda!
-
-### macOS
-Still to come!
-
-### Linux
-Still to come!
-
-### Android
-Still to come!
-
-### Embedded Devices
-Still to come!
 
 ## Step 3. Run TensorFlow Lite Models!
 There are four Python scripts to run the TensorFlow Lite object detection model on an image, video, web stream, or webcam feed. The scripts are based off the label_image.py example given in the [TensorFlow Lite examples GitHub repository](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/examples/python/label_image.py).
