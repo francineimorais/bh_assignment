@@ -1,33 +1,33 @@
-## Title: Child Seat Localization
+## Project Title: Child Seat Localization
 
 ## Goal
 Build AI solution for child seat localization in the passenger vehicle
 
 ## Problem statement
-Localization of the child seat in the passenger vehicle enable the buisness to high-level services
-and usecases.
+Localization of the child seat in the passenger vehicle enables the buisness to high-level services
+and use cases.
 
 ## Data set
 The data set shall be https://sviro.kl.dfki.de/data/ or any appropriate data set.
 <a href="https://sviro.kl.dfki.de/data/" target="_parent"></a>
 
 ## Solution scope
-Proposed software solution shall / may
+The proposed software solution shall / may
 * Instrument the data set
 * State or use prior work from academic / industry
-* Use appropriate state of the art AI algorithm (preferably deep learning based)
+* Use appropriate state-of-the-art AI algorithm (preferably deep learning based)
 * Enhance the data with synthetic
 * Reasonable accuracy on the given scope of time to develop
 * Rationales for the current Approach to enhance
-* Use any appropriate open source libraries and framework
+* Use any appropriate open-source libraries and framework
 * Focus more on the algorithm than the overall application
   
 ## Bonus Challenge (optional)
-Extend the current dataset with synthetic data inserting smoke inside the vehicle and
+Extend the current dataset with synthetic data by inserting smoke inside the vehicle and
 implement an AI smoke detection system.
 
 ## Delivery
-The solution shall be presented GitHub / GitLab code with optional supported document in
+The solution shall be presented in GitHub / GitLab code with optional supported documents in
 email.
 
 <p align="center">
@@ -39,23 +39,24 @@ email.
 
 ## Introduction
 
-Existem diversos frameworks que disponibilizam deep learning models pré-treinados e que podem ser customizados para tarefas específicas. Como exemplo de frameworks temos [TensorFlow Lite] - LINK PARA O TENSORFLOW  e [YoLo] - LINK PARA O YOLO
+Existem diversos frameworks que disponibilizam deep learning models pré-treinados e que podem ser customizados para as mais diversas tarefas. Como exemplo de frameworks temos: [TensorFlow 2 Object Detection Model Zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2_detection_zoo.md) e [Ultralytics YOLOv8](https://docs.ultralytics.com/modes/)
 
-TensorFlow Lite: is an optimized framework for deploying lightweight deep learning models on resource-constrained edge devices. TensorFlow Lite models have faster inference time and require less processing power than regular TensorFlow models, so they can be used to obtain faster performance in realtime applications. 
+**TensorFlow** is an open-source software library for dataflow and differentiable programming across a range of tasks. It is widely used by data scientists and software engineers for building machine learning models, including object detection models. TensorFlow provides a detection model zoo, which is a collection of pre-trained object detection models that can be used for a variety of applications
 
-YoLo: You Only Look Once — is an extremely fast multi object detection algorithm which uses convolutional neural network (CNN) to detect and identify objects.
-
+**YoLo: You Only Look Once** is an extremely fast multi-object detection algorithm that uses a convolutional neural network (CNN) to detect and identify objects.
 The neural network has this network architecture.
 
 <p align="center">
    <img src="doc/yolo1_net.png">
 </p>
 
-This guide provides step-by-step instructions for how train a custom YoLO Object Detection model.
-Lembrando que é possível exportar o modelo para outros formatos
-https://docs.ultralytics.com/modes/export/#arguments
+* This [guide](https://neptune.ai/blog/how-to-train-your-own-object-detector-using-tensorflow-object-detection-api) provides step-by-step instructions for how to train a custom Object Detector using **TensorFlow Object Detection API**.
 
-Mesmo existindo muitos materiais interessantes que explicam em detalhes treinar modelos em TensorFlow Lite, optamos escolher o YoLo apenas por questões de simplicidade de código. Existem materiais que apresentam comparação de performance, porém isso está além do escopo desse projeto.
+* This [guide](https://docs.ultralytics.com/modes/export/#arguments) provides step-by-step instructions for how to train a custom Object Detctor using **YOLOv8**.
+
+Após  o YoLo apenas por questões de simplicidade de código.
+Existem materiais que apresentam comparação de performance, porém isso está além do escopo desse projeto.
+
 
 Também por questões de simplicidade o código de inferência considera apenas imagens e não vídeos. Porém no caso da YoLo esse ajuste é simples, corresponde à adição de poucas linhas de código.
 
