@@ -43,7 +43,13 @@ Existem diversos frameworks que disponibilizam deep learning models pré-treinad
 
 TensorFlow Lite: is an optimized framework for deploying lightweight deep learning models on resource-constrained edge devices. TensorFlow Lite models have faster inference time and require less processing power than regular TensorFlow models, so they can be used to obtain faster performance in realtime applications. 
 
-YoLo: Descrição do YoLO
+YoLo: You Only Look Once — is an extremely fast multi object detection algorithm which uses convolutional neural network (CNN) to detect and identify objects.
+
+The neural network has this network architecture.
+
+<p align="center">
+   <img src="doc/yolo1_net.png">
+</p>
 
 This guide provides step-by-step instructions for how train a custom YoLO Object Detection model.
 Lembrando que é possível exportar o modelo para outros formatos
