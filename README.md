@@ -30,7 +30,7 @@ The solution shall be presented in GitHub / GitLab code with optional supported 
 email.
 
 <p align="center">
-   <img src="doc/BSR_demo.gif">
+   <img src="doc/inside-car-768x512.png">
 </p>
 
 ## Introduction
@@ -53,7 +53,10 @@ Após o estudo das documentações disponíveis sobre treinamento de deep learni
 
 Da família de modelos baseados em YoLo, optamos por utilizar o YoLov8 because no momento da realização desse trabalho é a versão considerada state-of-art (SOTA) for training real-time object detectors, offering cutting-edge performance in terms of accuracy and speed. Sabemos que existe a família de modelos [YOLO-NAS](https://docs.ultralytics.com/models/yolo-nas/#overview) que em alguns estudos comparativos apresentou performance superior ao YoLov8 porém os modelos YoLo-NAS ainda não estão disponível para customização.
 
-## Step 1. Training The Model
+## Step 1. Data preparation
+Explicar sobre o formato dos dados para treinamento. Falar sobre o software que usamos para rotular os dados
+
+## Step 2. Training The Model
 ### Using Google Colab (recommended)
 The easiest way to train, convert, and export a YoLo model is using Google Colab. Colab provides you with a free GPU-enabled virtual machine on Google's servers that comes pre-installed with the libraries and packages needed for training.
 
@@ -62,9 +65,6 @@ I wrote a [Google Colab notebook](./yolo_object_detection.ipynb) that can be use
 <a href="https://colab.research.google.com/github/francineimorais/bh_assignment/blob/main/yolo_object_detection.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 Open the Colab notebook in your browser by clicking the icon above. Work through the instructions in the notebook to start training your own model. Once it's trained is possible to [export to other formats](https://docs.ultralytics.com/modes/export/).
-
-## Step 2. Data preparation
-Explicar sobre o formato dos dados para treinamento. Falar sobre o software que usamos para rotular os dados
 
 ## Step 3. Other tasks
 Além da deteção de objetos também possível treinar modelos baseados em YoLo para a realização de tarefas como: segmentation, classification, and pose estimation. Mais informações disponíveis no [link](https://docs.ultralytics.com/tasks/)
