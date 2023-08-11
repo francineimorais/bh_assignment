@@ -73,6 +73,7 @@ Devido ao deadline do projeto não foi possível avaliar/utilizar os frameworks 
 
 Por fim, todas as imagens foram redimensionadas para XxY e os objetos child seat and smoke foram manualmente rotulados utilizando o programa disponível [aqui](https://github.com/developer0hye/Yolo_Label). É importante ressaltar que os sistemas de detecção de objetos são treinados de forma supervisionada, por conta disso precisam de dados rotulados para que possam calcular sua performance. Também é importante ressaltar que o padrão do arquivo de labels varia dependendo do framework que utilzamos para o treinamento do detector de objetos. Por isso se pretendemos treinar um modelo baseado em YoLo é preciso gerar o arquivo de labels no padrão esperado pelo YoLo.
 
+A base de dados utilizada nesse projeto está disponível em LINK PARA O DIRETÓRIO LOCAL
 
 ## Step 2. Model training
 ### Using Google Colab (recommended)
@@ -83,6 +84,11 @@ I wrote a [Google Colab notebook](./yolo_object_detection.ipynb) that can be use
 <a href="https://colab.research.google.com/github/francineimorais/bh_assignment/blob/main/yolo_object_detection.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 Open the Colab notebook in your browser by clicking the icon above. Work through the instructions in the notebook to start training your own model. Once it's trained is possible to [export to other formats](https://docs.ultralytics.com/modes/export/).
+
+## Step 3. Performance evaluation
+Explicar a métrica de performance utilizada por modelos de detecção de objeto.
+Justificar o valor encontrado para a performance do modelo que treinamos. Muito dessa performance está relacionada com a limitação da base de dados.
+
 
 ## Future tasks
 * Avaliação de frameworks para geração de dados sintéticos, com o objetivo de gerar dados contendo smoke.
