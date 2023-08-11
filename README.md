@@ -66,20 +66,7 @@ I wrote a [Google Colab notebook](./yolo_object_detection.ipynb) that can be use
 Open the Colab notebook in your browser by clicking the icon above. Work through the instructions in the notebook to start training your own model. Once it's trained is possible to [export to other formats](https://docs.ultralytics.com/modes/export/).
 
 ## Other tasks
-Além da deteção de objetos também possível treinar modelos baseados em YoLo para a realização de tarefas como: segmentation, classification, and pose estimation. Mais informações disponíveis no [link](https://docs.ultralytics.com/tasks/)
-
-<details>
-   <summary>Webcam</summary>
-Make sure you have a USB webcam plugged into your computer. If you’re on a laptop with a built-in camera, you don’t need to plug in a USB webcam. 
-
-From the `tflite1` directory, issue: 
-
-```
-python TFLite_detection_webcam.py --modeldir=TFLite_model 
-```
-
-After a few moments of initializing, a window will appear showing the webcam feed. Detected objects will have bounding boxes and labels displayed on them in real-time.
-</details>
+In addition to object detection, it is also possible to train YoLo-based models to perform tasks such as: segmentation, classification, and pose estimation. More information is available at [link](https://docs.ultralytics.com/tasks/).
 
 ## FAQs
 <details>
