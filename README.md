@@ -97,7 +97,7 @@ Justificar o valor encontrado para a performance do modelo que treinamos. Muito 
 
 ## FAQs
 <details>
-<summary>Can YoLo only be used for object detection tasks??</summary>
+<summary>Can YoLo only be used for object detection tasks?</summary>
 <br>
 In addition to object detection, it is also possible to train YoLo-based models to perform tasks such as segmentation, classification, and pose estimation. More information is available at [link](https://docs.ultralytics.com/tasks/).
 </details>
