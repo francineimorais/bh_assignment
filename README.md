@@ -48,7 +48,7 @@ The neural network has this network architecture.
 
 * This [guide](https://neptune.ai/blog/how-to-train-your-own-object-detector-using-tensorflow-object-detection-api) provides step-by-step instructions for how to train a custom Object Detector using **TensorFlow Object Detection API**.
 
-* This [guide](https://docs.ultralytics.com/modes/export/#arguments) provides step-by-step instructions for how to train a custom Object Detector using **YOLOv8**.
+* This [guide](https://docs.ultralytics.com/modes/train/) provides step-by-step instructions for how to train a custom Object Detector using **YOLOv8**.
 
 After studying the available documentation on training deep learning models using TensorFlow or YoLo, just for reasons of code simplicity, we decided to use YoLo for the development of our Object Detector.
 
