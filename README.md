@@ -55,6 +55,21 @@ From the family of models based on YoLo, we chose to use YoLov8 because, at the 
 ## Step 1. Data preparation
 Explicar sobre o formato dos dados para treinamento. Falar sobre o software que usamos para rotular os dados
 
+Existem diversas plataformas para geração de dados sintéticos como por exemplo: DALL - E 
+Também existem diversos frameworks que oferecem modelos pré-treinados que permitem geração e transformação de imagens
+stable diffusion:
+
+   https://towardsdatascience.com/a-synthetic-image-dataset-generated-with-stable-diffusion-93e8b557051b
+   https://github.com/CompVis/stable-diffusion
+   https://huggingface.co/docs/diffusers/index
+
+   https://medium.com/featurepreneur/generate-synthetic-image-data-for-your-next-machine-learning-project-74cf71b65a8f
+
+Mas por limitação de tempo para o projeto não foi possível avaliar e ou usar imagens geradas por esses frameworks.
+
+Para o dataset contendo imagens de smoke optamos por gerar algumas imagens via plataforma DALL-e usamos os créditos que tinhamos disponíveis. Outras imagens foram baixadas do google. O dataset contém 100 imagens, sabemos que é uma quantidade limita e que o ideal seria ter no mínimo 300 imagens.
+
+
 ## Step 2. Model training
 ### Using Google Colab (recommended)
 The easiest way to train, convert, and export a YoLo model is using Google Colab. Colab provides you with a free GPU-enabled virtual machine on Google's servers that comes pre-installed with the libraries and packages needed for training.
