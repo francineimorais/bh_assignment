@@ -32,7 +32,7 @@ implement an AI smoke detection system.
 The solution shall be presented in GitHub / GitLab code with optional supported documents in
 email.
 
-## Introduction
+# Introduction
 There are several frameworks that provide pre-trained deep learning models that can be customized for the most diverse tasks. As an example of frameworks we have: [TensorFlow 2 Object Detection Model Zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2_detection_zoo.md) and [Ultralytics YOLOv8](https://docs.ultralytics.com/modes/)
 
 **TensorFlow** is an open-source software library for dataflow and differentiable programming across a range of tasks. It is widely used by data scientists and software engineers for building machine learning models, including object detection models. TensorFlow provides a detection model zoo, which is a collection of pre-trained object detection models that can be used for a variety of applications
@@ -65,7 +65,7 @@ I wrote a [Google Colab notebook](./yolo_object_detection.ipynb) that can be use
 
 Open the Colab notebook in your browser by clicking the icon above. Work through the instructions in the notebook to start training your own model. Once it's trained is possible to [export to other formats](https://docs.ultralytics.com/modes/export/).
 
-## Step 3. Other tasks
+## Other tasks
 Além da deteção de objetos também possível treinar modelos baseados em YoLo para a realização de tarefas como: segmentation, classification, and pose estimation. Mais informações disponíveis no [link](https://docs.ultralytics.com/tasks/)
 
 <details>
