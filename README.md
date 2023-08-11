@@ -74,7 +74,7 @@ Due to the project deadline, it was not possible to evaluate/use the frameworks 
 
 Finally, all images were resized to XxY and the child seat and smoke objects were manually labeled using the program available [here](https://github.com/developer0hye/Yolo_Label). It is important to note that object detection systems are trained in a supervised way, and therefore need labeled data so that they can calculate their performance metrics. It is also important to point out that the structure of the labels file change depending on the framework we use to train the object detector. Therefore, if we intend to train a model based on YoLo, it is necessary to generate the label files following the pattern expected by YoLo.
 
-The database for this project is available [here](./dataset/) 
+The database for this project is available [here](./dataset/)  
 
 ## Step 2. Model training
 ### Using Google Colab (recommended)
