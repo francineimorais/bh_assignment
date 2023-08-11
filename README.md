@@ -1,6 +1,9 @@
 # Project: Child Seat Localization
 ## Goal
 Build AI solution for child seat localization in the passenger vehicle
+<p align="center">
+   <img width="300" src="doc/inside-car-768x512.png">
+</p>
 
 ## Problem statement
 Localization of the child seat in the passenger vehicle enables the business to high-level services
@@ -29,12 +32,8 @@ implement an AI smoke detection system.
 The solution shall be presented in GitHub / GitLab code with optional supported documents in
 email.
 
-<p align="center">
-   <img src="doc/inside-car-768x512.png">
-</p>
-
 ## Introduction
-Existem diversos frameworks que disponibilizam deep learning models pré-treinados e que podem ser customizados para as mais diversas tarefas. Como exemplo de frameworks temos: [TensorFlow 2 Object Detection Model Zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2_detection_zoo.md) e [Ultralytics YOLOv8](https://docs.ultralytics.com/modes/)
+There are several frameworks that provide pre-trained deep learning models that can be customized for the most diverse tasks. As an example of frameworks we have: [TensorFlow 2 Object Detection Model Zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2_detection_zoo.md) and [Ultralytics YOLOv8](https://docs.ultralytics.com/modes/)
 
 **TensorFlow** is an open-source software library for dataflow and differentiable programming across a range of tasks. It is widely used by data scientists and software engineers for building machine learning models, including object detection models. TensorFlow provides a detection model zoo, which is a collection of pre-trained object detection models that can be used for a variety of applications
 
@@ -49,9 +48,9 @@ The neural network has this network architecture.
 
 * This [guide](https://docs.ultralytics.com/modes/export/#arguments) provides step-by-step instructions for how to train a custom Object Detector using **YOLOv8**.
 
-Após o estudo das documentações disponíveis sobre treinamento de deep learning models using TensorFlow or YoLo, apenas por questões de simplicidade de código optamos por utilizar YoLo para o desenvolvimento de nosso Object Detector.
+After studying the available documentation on training deep learning models using TensorFlow or YoLo, just for reasons of code simplicity, we decided to use YoLo for the development of our Object Detector.
 
-Da família de modelos baseados em YoLo, optamos por utilizar o YoLov8 because no momento da realização desse trabalho é a versão considerada state-of-art (SOTA) for training real-time object detectors, offering cutting-edge performance in terms of accuracy and speed. Sabemos que existe a família de modelos [YOLO-NAS](https://docs.ultralytics.com/models/yolo-nas/#overview) que em alguns estudos comparativos apresentou performance superior ao YoLov8 porém os modelos YoLo-NAS ainda não estão disponível para customização.
+From the family of models based on YoLo, we chose to use YoLov8 because, at the time of this work, it is considered a state-of-art (SOTA) for training real-time object detectors, offering cutting-edge performance in terms of accuracy and speed. We know that there is a family of models [YOLO-NAS](https://docs.ultralytics.com/models/yolo-nas/#overview) that in some comparative studies presented superior performance to YoLov8, but the YoLo-NAS models have not yet available for customization.
 
 ## Step 1. Data preparation
 Explicar sobre o formato dos dados para treinamento. Falar sobre o software que usamos para rotular os dados
