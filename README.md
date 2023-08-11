@@ -24,7 +24,7 @@ The proposed software solution shall / may
 * Use any appropriate open-source libraries and framework
 * Focus more on the algorithm than the overall application
   
-## Bonus Challenge (optional)
+## Bonus challenge (optional)
 Extend the current dataset with synthetic data by inserting smoke inside the vehicle and
 implement an AI smoke detection system.
 
@@ -55,7 +55,7 @@ From the family of models based on YoLo, we chose to use YoLov8 because, at the 
 ## Step 1. Data preparation
 Explicar sobre o formato dos dados para treinamento. Falar sobre o software que usamos para rotular os dados
 
-## Step 2. Training The Model
+## Step 2. Model training
 ### Using Google Colab (recommended)
 The easiest way to train, convert, and export a YoLo model is using Google Colab. Colab provides you with a free GPU-enabled virtual machine on Google's servers that comes pre-installed with the libraries and packages needed for training.
 
