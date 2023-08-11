@@ -93,10 +93,20 @@ One popular method for measuring object detection model accuracy is "mean averag
 Justificar o valor encontrado para a performance do modelo que treinamos. Muito dessa performance está relacionada com a limitação da base de dados.
 
 ## Step 5. Reprodutibilidade
-Visando a reprodutibilidade do trabalho também disponibilizamos os modelos que foram treinados para esta projeto. Eles estão disponívei no diretório custom_models.
+Visando a reprodutibilidade do trabalho disponibilizamos os modelos treinados para este projeto. Eles estão disponívei no diretório [custom_models](https://github.com/francineimorais/bh_assignment/tree/main/custom_models).
+
+Também disponibilizamos o notebook contendo o código para treinamento e inferência.
 
 ## Step 6. Conclusões
-Explicar quais foram as conclusões do MVP realizado
+No trabalho apresentado realizamos o desenvolvimento de um modelo de detecção de objetos baseado em AI e image processing. O modelo foi treinado para detecção de child seat e smoke into vehicle. O modelo apresentou mAP = COLOCAR o VALOR.
+
+Para a realização do projeto as tarefas que exigiram mais tempo foram:
+* Revisão da literatura e avaliação de abordagens utilizando TensorFlow e YoLo
+* Gerar o dataset de imagens de smoke
+* Rotular as imagens
+* Escrita da documentação
+
+O código para o treinamento do modelo 
 
 
 ## Future works
