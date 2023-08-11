@@ -56,7 +56,7 @@ From the family of models based on YoLo, we chose to use YoLov8 because, at the 
 
 ## Step 1. Data preparation
 
-We know that data quality is one of the main factors that determine the final performance of the solution. It is very important that the data, which in this project corresponds to images, are as diverse as possible. In the case of the child seat in vehicle detection, it is important to have images containing child seats of different sizes, shapes and with images captured in different conditions such as angle, lighting, and contrast.
+The data quality is one of the main elements that determine the final performance of the solution. It is very important that the data, which in this project corresponds to images, are as diverse as possible. In the case of the child seat in vehicle detection, it is important to have images containing child seats of different sizes, shapes and with images captured in different conditions such as angle, lighting, and contrast.
 The same is valid for smoke detection, it is important to have examples containing smoke with different shapes, sizes and captured in images with different lighting conditions.
 
 As suggested in the project scope, most of the images used are synthetically generated. The images containing child seats were obtained at https://sviro.kl.dfki.de/download/. As it is a database containing 25,000 images, we decided to download only the RGB images for the vehicle **BMW-X5-Random**. 
@@ -74,7 +74,7 @@ Due to the project deadline, it was not possible to evaluate/use the frameworks 
 
 Finally, all images were resized to XxY and the child seat and smoke objects were manually labeled using the program available [here](https://github.com/developer0hye/Yolo_Label). It is important to note that object detection systems are trained in a supervised way, and therefore need labeled data so that they can calculate their performance metrics. It is also important to point out that the structure of the labels file change depending on the framework we use to train the object detector. Therefore, if we intend to train a model based on YoLo, it is necessary to generate the label files following the pattern expected by YoLo.
 
-A base de dados utilizada nesse projeto está disponível em LINK PARA O DIRETÓRIO LOCAL
+The database for this project is available [here](./dataset/) 
 
 ## Step 2. Model training
 ### Using Google Colab (recommended)
