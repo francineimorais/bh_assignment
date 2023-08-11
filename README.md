@@ -84,10 +84,18 @@ I wrote a [Google Colab notebook](./yolo_object_detection.ipynb) that can be use
 
 Open the Colab notebook in your browser by clicking the icon above. Work through the instructions in the notebook to start training your own model. Once it's trained is possible to [export to other formats](https://docs.ultralytics.com/modes/export/).
 
-## Other tasks
-In addition to object detection, it is also possible to train YoLo-based models to perform tasks such as: segmentation, classification, and pose estimation. More information is available at [link](https://docs.ultralytics.com/tasks/).
+## Future tasks
+* Avaliação de frameworks para geração de dados sintéticos, com o objetivo de gerar dados contendo smoke.
+* Utilizar para treinamento um maior número de imagens de child seat [disponíveis em](https://sviro.kl.dfki.de/).
+* Treinar modelos baseados em TensorFlow e comparar com os modelos baseados em YoLo. 
 
 ## FAQs
+<details>
+<summary>Can YoLo only be used for object detection tasks??</summary>
+<br>
+In addition to object detection, it is also possible to train YoLo-based models to perform tasks such as segmentation, classification, and pose estimation. More information is available at [link](https://docs.ultralytics.com/tasks/).
+</details>
+
 <details>
 <summary>What's the difference between training, transfer learning, and fine-tuning?</summary>
 <br>
