@@ -92,10 +92,10 @@ One popular method for measuring object detection model accuracy is "mean averag
 
 Justificar o valor encontrado para a performance do modelo que treinamos. Muito dessa performance está relacionada com a limitação da base de dados.
 
-## Step 5. Reprodutibilidade
+## Step 4. Reprodutibilidade
 Focusing on the reproducibility of the work, we made available the trained models for this project. They are available in the folder [custom_models](https://github.com/francineimorais/bh_assignment/tree/main/custom_models). We also provide the notebook containing the code for training and inference.
 
-## Step 6. Conclusões
+## Step 5. Conclusões
 In the presented work, we developed an object detection model based on AI and image processing. The model was trained for child seat and smoke in vehicle detection. The model achieved mAP = PUT VALUE HERE.
 
 The tasks that required the most time to complete the project were:
