@@ -55,10 +55,11 @@ After studying the available documentation on training deep learning models usin
 From the family of models based on YoLo, we chose to use YoLov8 because, at the time of this work, it is considered a state-of-art (SOTA) for training real-time object detectors, offering cutting-edge performance in terms of accuracy and speed. We know that there is a family of models [YOLO-NAS](https://docs.ultralytics.com/models/yolo-nas/#overview) that in some comparative studies presented superior performance to YoLov8, but the YoLo-NAS models have not yet available for customization.
 
 ## Step 1. Data preparation
-Sabemos que um dos principais fatores que determinam a qualidade do sistema final não é somente o modelo utilizado, mas principalmente a qualidade dos dados. É muito importante que os dados, que nesse projeto corresponde à imagens, sejam os mais diversos e representatidos possíveis. No caso de detecção de child seat into vehicle é importante termos imagens contendo child seat de diferentes tamanhos, formas e com imagem capturada em diferentes condições como angulo, iluminação, contraste.  
-O mesmo é válido para a detecção de smoke, é importante termos exemplos contendo smoke com diferentes formas, tamanhos e registrados em imagens com diferentes condições de iluminação.
 
-Conforme sugerido no scopo do projeto a maior parte das imagens utilizas foram geradas sintéticamente. As imagens contendo child seat foram obtidas em https://sviro.kl.dfki.de/download/ . Por se tratar de uma base de dados contendo 25,000 imagens optamos por baixar apenas as imagens RGB para o vehicle BMW-X5-Random. 
+We know that data quality is one of the main factors that determine the final performance of the solution. It is very important that the data, which in this project corresponds to images, are as diverse as possible. In the case of the child seat in vehicle detection, it is important to have images containing child seats of different sizes, shapes and with images captured in different conditions such as angle, lighting, and contrast.
+The same is valid for smoke detection, it is important to have examples containing smoke with different shapes, sizes and captured in images with different lighting conditions.
+
+As suggested in the project scope, most of the images used are synthetically generated. The images containing child seats were obtained at https://sviro.kl.dfki.de/download/. As it is a database containing 25,000 images, we decided to download only the RGB images for the vehicle BMW-X5-Random. 
 
 Parte das imagens contendo smoke foram geradas através da plataforma [DALL-E 2](https://openai.com/dall-e-2). A plataforma DALL-E funciona no modelo de créditos, o que nos permitiu gerar imagens até que os créditos disponíveis na versão free acabassem. O restante das imagens foram obtidas via busca na plataforma Google image.
 
