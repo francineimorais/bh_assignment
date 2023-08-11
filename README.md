@@ -89,11 +89,14 @@ Open the Colab notebook in your browser by clicking the icon above. Work through
 Explicar a métrica de performance utilizada por modelos de detecção de objeto.
 Justificar o valor encontrado para a performance do modelo que treinamos. Muito dessa performance está relacionada com a limitação da base de dados.
 
-## Step 4. Reprodutibilidade
+## Step 5. Reprodutibilidade
 Falar que o modelo ajustado está disponível em... e que pode ser utilizado para uma avaliação do projeto.
 
+## Step 6. Conclusões
+Explicar quais foram as conclusões do MVP realizado
 
-## Future tasks
+
+## Future works
 * Avaliação de frameworks para geração de dados sintéticos, com o objetivo de gerar dados contendo smoke.
 * Utilizar para treinamento um maior número de imagens de child seat [disponíveis em](https://sviro.kl.dfki.de/).
 * Treinar modelos baseados em TensorFlow e comparar com os modelos baseados em YoLo. 
