@@ -59,20 +59,20 @@ From the family of models based on YoLo, we chose to use YoLov8 because, at the 
 We know that data quality is one of the main factors that determine the final performance of the solution. It is very important that the data, which in this project corresponds to images, are as diverse as possible. In the case of the child seat in vehicle detection, it is important to have images containing child seats of different sizes, shapes and with images captured in different conditions such as angle, lighting, and contrast.
 The same is valid for smoke detection, it is important to have examples containing smoke with different shapes, sizes and captured in images with different lighting conditions.
 
-As suggested in the project scope, most of the images used are synthetically generated. The images containing child seats were obtained at https://sviro.kl.dfki.de/download/. As it is a database containing 25,000 images, we decided to download only the RGB images for the vehicle BMW-X5-Random. 
+As suggested in the project scope, most of the images used are synthetically generated. The images containing child seats were obtained at https://sviro.kl.dfki.de/download/. As it is a database containing 25,000 images, we decided to download only the RGB images for the vehicle **BMW-X5-Random**. 
 
-Parte das imagens contendo smoke foram geradas através da plataforma [DALL-E 2](https://openai.com/dall-e-2). A plataforma DALL-E funciona no modelo de créditos, o que nos permitiu gerar imagens até que os créditos disponíveis na versão free acabassem. O restante das imagens foram obtidas via busca na plataforma Google image.
+Part of the images containing smoke were generated on the platform [DALL-E 2](https://openai.com/dall-e-2). The DALL-E platform works on a credits model, which allowed us to generate images until the credits available in the free version run out. More images were obtained via search on the Google Image platform.
 
-Existem diversos frameworks que disponibilizam modelos de AI pré-treinados que podem ser aplicados para geração e transformação de imagens. A tarefa de gerar imagens para treinameno de modelos é comumente conhecida por data augmentation. A seguir disponibilizo alguns link para trabalhos e frameworks para data augmentation: 
+There are several frameworks that provide pre-trained AI models that can be applied to generate and transform images. The task of generating synthetic images for model training is commonly known as data augmentation. Below I provide some links to works and frameworks for data augmentation:
 
 * https://towardsdatascience.com/a-synthetic-image-dataset-generated-with-stable-diffusion-93e8b557051b
 * https://github.com/CompVis/stable-diffusion
 * https://huggingface.co/docs/diffusers/index
 * https://medium.com/featurepreneur/generate-synthetic-image-data-for-your-next-machine-learning-project-74cf71b65a8f
 
-Devido ao deadline do projeto não foi possível avaliar/utilizar os frameworks apresentados nos links acima para a geração de imagens sintéticas. Deixamos isso como tarefa futura. 
+Due to the project deadline, it was not possible to evaluate/use the frameworks presented in the links above for the generation of synthetic images. We leave this as future work.
 
-Por fim, todas as imagens foram redimensionadas para XxY e os objetos child seat and smoke foram manualmente rotulados utilizando o programa disponível [aqui](https://github.com/developer0hye/Yolo_Label). É importante ressaltar que os sistemas de detecção de objetos são treinados de forma supervisionada, por conta disso precisam de dados rotulados para que possam calcular sua performance. Também é importante ressaltar que o padrão do arquivo de labels varia dependendo do framework que utilzamos para o treinamento do detector de objetos. Por isso se pretendemos treinar um modelo baseado em YoLo é preciso gerar o arquivo de labels no padrão esperado pelo YoLo.
+Finally, all images were resized to XxY and the child seat and smoke objects were manually labeled using the program available [here](https://github.com/developer0hye/Yolo_Label). It is important to note that object detection systems are trained in a supervised way, and therefore need labeled data so that they can calculate their performance metrics. It is also important to point out that the structure of the labels file change depending on the framework we use to train the object detector. Therefore, if we intend to train a model based on YoLo, it is necessary to generate the label files following the pattern expected by YoLo.
 
 A base de dados utilizada nesse projeto está disponível em LINK PARA O DIRETÓRIO LOCAL
 
