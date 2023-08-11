@@ -33,7 +33,9 @@ The solution shall be presented in GitHub / GitLab code with optional supported 
 email.
 
 # Introduction
-There are several frameworks that provide pre-trained deep learning models that can be customized for the most diverse tasks. As an example of frameworks we have: [TensorFlow 2 Object Detection Model Zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2_detection_zoo.md) and [Ultralytics YOLOv8](https://docs.ultralytics.com/modes/)
+The main goal of the project was to develop an AI-based solution for locating a child seat in a passenger vehicle based on an image database. As an extension of the project, smoke detection capability was also included. Systems that perform localization tasks from images are usually called object detectors.
+
+There are several frameworks that provide pre-trained deep learning models that can be customized for the most diverse tasks, including object detection. As an example of frameworks we have: [TensorFlow 2 Object Detection Model Zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2_detection_zoo.md) and [Ultralytics YOLOv8](https://docs.ultralytics.com/modes/)
 
 **TensorFlow** is an open-source software library for dataflow and differentiable programming across a range of tasks. It is widely used by data scientists and software engineers for building machine learning models, including object detection models. TensorFlow provides a detection model zoo, which is a collection of pre-trained object detection models that can be used for a variety of applications
 
@@ -53,21 +55,23 @@ After studying the available documentation on training deep learning models usin
 From the family of models based on YoLo, we chose to use YoLov8 because, at the time of this work, it is considered a state-of-art (SOTA) for training real-time object detectors, offering cutting-edge performance in terms of accuracy and speed. We know that there is a family of models [YOLO-NAS](https://docs.ultralytics.com/models/yolo-nas/#overview) that in some comparative studies presented superior performance to YoLov8, but the YoLo-NAS models have not yet available for customization.
 
 ## Step 1. Data preparation
-Explicar sobre o formato dos dados para treinamento. Falar sobre o software que usamos para rotular os dados
+Sabemos que um dos principais fatores que determinam a qualidade do sistema final não é somente o modelo utilizado, mas principalmente a qualidade dos dados. É muito importante que os dados, que nesse projeto corresponde à imagens, sejam os mais diversos e representatidos possíveis. No caso de detecção de child seat into vehicle é importante termos imagens contendo child seat de diferentes tamanhos, formas e com imagem capturada em diferentes condições como angulo, iluminação, contraste.  
+O mesmo é válido para a detecção de smoke, é importante termos exemplos contendo smoke com diferentes formas, tamanhos e registrados em imagens com diferentes condições de iluminação.
 
-Existem diversas plataformas para geração de dados sintéticos como por exemplo: DALL - E 
-Também existem diversos frameworks que oferecem modelos pré-treinados que permitem geração e transformação de imagens
-stable diffusion:
+Conforme sugerido no scopo do projeto a maior parte das imagens utilizas foram geradas sintéticamente. As imagens contendo child seat foram obtidas em https://sviro.kl.dfki.de/download/ . Por se tratar de uma base de dados contendo 25,000 imagens optamos por baixar apenas as imagens RGB para o vehicle BMW-X5-Random. 
 
-   https://towardsdatascience.com/a-synthetic-image-dataset-generated-with-stable-diffusion-93e8b557051b
-   https://github.com/CompVis/stable-diffusion
-   https://huggingface.co/docs/diffusers/index
+Parte das imagens contendo smoke foram geradas através da plataforma [DALL-E 2](https://openai.com/dall-e-2). A plataforma DALL-E funciona no modelo de créditos, o que nos permitiu gerar imagens até que os créditos disponíveis na versão free acabassem. O restante das imagens foram obtidas via busca na plataforma Google image.
 
-   https://medium.com/featurepreneur/generate-synthetic-image-data-for-your-next-machine-learning-project-74cf71b65a8f
+Existem diversos frameworks que disponibilizam modelos de AI pré-treinados que podem ser aplicados para geração e transformação de imagens. A tarefa de gerar imagens para treinameno de modelos é comumente conhecida por data augmentation. A seguir disponibilizo alguns link para trabalhos e frameworks para data augmentation: 
 
-Mas por limitação de tempo para o projeto não foi possível avaliar e ou usar imagens geradas por esses frameworks.
+* https://towardsdatascience.com/a-synthetic-image-dataset-generated-with-stable-diffusion-93e8b557051b
+* https://github.com/CompVis/stable-diffusion
+* https://huggingface.co/docs/diffusers/index
+* https://medium.com/featurepreneur/generate-synthetic-image-data-for-your-next-machine-learning-project-74cf71b65a8f
 
-Para o dataset contendo imagens de smoke optamos por gerar algumas imagens via plataforma DALL-e usamos os créditos que tinhamos disponíveis. Outras imagens foram baixadas do google. O dataset contém 100 imagens, sabemos que é uma quantidade limita e que o ideal seria ter no mínimo 300 imagens.
+Devido ao deadline do projeto não foi possível avaliar/utilizar os frameworks apresentados nos links acima para a geração de imagens sintéticas. Deixamos isso como tarefa futura. 
+
+Por fim, todas as imagens foram redimensionadas para XxY e os objetos child seat and smoke foram manualmente rotulados utilizando o programa disponível [aqui](https://github.com/developer0hye/Yolo_Label). É importante ressaltar que os sistemas de detecção de objetos são treinados de forma supervisionada, por conta disso precisam de dados rotulados para que possam calcular sua performance. Também é importante ressaltar que o padrão do arquivo de labels varia dependendo do framework que utilzamos para o treinamento do detector de objetos. Por isso se pretendemos treinar um modelo baseado em YoLo é preciso gerar o arquivo de labels no padrão esperado pelo YoLo.
 
 
 ## Step 2. Model training
