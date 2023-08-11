@@ -93,26 +93,21 @@ One popular method for measuring object detection model accuracy is "mean averag
 Justificar o valor encontrado para a performance do modelo que treinamos. Muito dessa performance está relacionada com a limitação da base de dados.
 
 ## Step 5. Reprodutibilidade
-Visando a reprodutibilidade do trabalho disponibilizamos os modelos treinados para este projeto. Eles estão disponívei no diretório [custom_models](https://github.com/francineimorais/bh_assignment/tree/main/custom_models).
-
-Também disponibilizamos o notebook contendo o código para treinamento e inferência.
+Focusing on the reproducibility of the work, we made available the trained models for this project. They are available in the folder [custom_models](https://github.com/francineimorais/bh_assignment/tree/main/custom_models). We also provide the notebook containing the code for training and inference.
 
 ## Step 6. Conclusões
-No trabalho apresentado realizamos o desenvolvimento de um modelo de detecção de objetos baseado em AI e image processing. O modelo foi treinado para detecção de child seat e smoke into vehicle. O modelo apresentou mAP = COLOCAR o VALOR.
+In the presented work, we developed an object detection model based on AI and image processing. The model was trained for child seat and smoke in vehicle detection. The model achieved mAP = PUT VALUE HERE.
 
-Para a realização do projeto as tarefas que exigiram mais tempo foram:
-* Revisão da literatura e avaliação de abordagens utilizando TensorFlow e YoLo
-* Gerar o dataset de imagens de smoke
-* Rotular as imagens
-* Escrita da documentação
-
-O código para o treinamento do modelo 
-
+The tasks that required the most time to complete the project were:
+* Literature review and evaluation of approaches using TensorFlow and YoLo
+* Generate the smoke image dataset
+* Label the images
+* Documentation
 
 ## Future works
-* Avaliação de frameworks para geração de dados sintéticos, com o objetivo de gerar dados contendo smoke.
-* Utilizar para treinamento um maior número de imagens de child seat [disponíveis em](https://sviro.kl.dfki.de/).
-* Treinar modelos baseados em TensorFlow e comparar com os modelos baseados em YoLo. 
+* Evaluation of frameworks for generating synthetic data, with the objective of generating data containing smoke.
+* Use a larger number of child seat images for training [disponíveis em](https://sviro.kl.dfki.de/).
+* Train TensorFlow-based models and compare with YoLo-based models. 
 
 ## FAQs
 <details>
