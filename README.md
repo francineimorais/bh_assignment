@@ -87,11 +87,13 @@ I wrote a [Google Colab notebook](./yolo_object_detection.ipynb) that can be use
 Open the Colab notebook in your browser by clicking the icon above. Work through the instructions in the notebook to start training your own model. Once it's trained is possible to [export to other formats](https://docs.ultralytics.com/modes/export/).
 
 ## Step 3. Performance evaluation
-Explicar a métrica de performance utilizada por modelos de detecção de objeto.
+
+One popular method for measuring object detection model accuracy is "mean average precision" (mAP). Basically, the higher the mAP score, the better your model is at detecting objects in images. To learn more about mAP, read through this article from [Roboflow](https://blog.roboflow.com/mean-average-precision/).
+
 Justificar o valor encontrado para a performance do modelo que treinamos. Muito dessa performance está relacionada com a limitação da base de dados.
 
 ## Step 5. Reprodutibilidade
-Falar que o modelo ajustado está disponível em... e que pode ser utilizado para uma avaliação do projeto.
+Visando a reprodutibilidade do trabalho também disponibilizamos os modelos que foram treinados para esta projeto. Eles estão disponívei no diretório custom_models.
 
 ## Step 6. Conclusões
 Explicar quais foram as conclusões do MVP realizado
