@@ -9,7 +9,7 @@ Build AI solution for child seat localization in the passenger vehicle
 Localization of the child seat in the passenger vehicle enables the business to high-level services
 and use cases.
 
-## Data set
+## Suggested dataset
 The data set shall be https://sviro.kl.dfki.de/data/ or any appropriate data set.
 <a href="https://sviro.kl.dfki.de/data/" target="_parent"></a>
 
