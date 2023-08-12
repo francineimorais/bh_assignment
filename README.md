@@ -107,8 +107,8 @@ The following figure shows results of objects of type "child-seat" and "smoke" d
 </p>
 
 
-## Step 4. Reprodutibilidade
-Focusing on the reproducibility of the work, we made available the trained models for this project. They are available in the folder [custom_models](https://github.com/francineimorais/bh_assignment/tree/main/custom_models/runs/detect/train/weights). We also provide the notebook containing the code for training and inference.
+## Step 4. Reproducibility
+Focusing on the reproducibility of the work, we made available the trained models for this project. They are available in the folder [custom_models](https://github.com/francineimorais/bh_assignment/tree/main/custom_models/runs/detect/train/weights). We also provide the notebook containing the [source code](./yolo_object_detection.ipynb) for training and inference.
 
 ## Step 5. Conclusions
 In the presented work, we developed an object detection model based on AI and image processing. The model was trained for child seat and smoke in vehicle detection. The model achieved mAP50 > 0.86 for all classes.
