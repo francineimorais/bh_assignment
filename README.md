@@ -113,7 +113,7 @@ Focusing on the reproducibility of the work, we made available the trained model
 ## Step 5. Conclusions
 In the presented work, we developed an object detection model based on AI and image processing. The model was trained for child seat and smoke in vehicle detection. The model achieved mAP50 > 0.86 for all classes.
 
-The tasks that required the most time to complete the project were:
+The tasks that required the most time to be completed:
 * Literature review and evaluation of approaches using TensorFlow and YoLo
 * support scripts (ex: data augmentation)
 * Documentation (README.md)
