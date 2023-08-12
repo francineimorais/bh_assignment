@@ -3,7 +3,7 @@
 Build AI solution for child seat localization in the passenger vehicle
 <p align="center">
    <img width="300" src="doc/inside-car-768x512.png">
-</p>
+</p> 
 
 ## Problem statement
 Localization of the child seat in the passenger vehicle enables the business to high-level services
