@@ -94,7 +94,7 @@ Open the Colab notebook in your browser by clicking the icon above. Work through
 
 One popular method for measuring object detection model accuracy is "mean average precision" (mAP). Basically, the higher the mAP score, the better your model is at detecting objects in images. To learn more about mAP, read through this article from [Roboflow](https://blog.roboflow.com/mean-average-precision/).
 
-Na imagem a seguir apresentamos a estatística do modelo para o conjunto de validação. O modelo apresentou resultados satisfatórios para a métrica mAP50. Também notamos uma redução de performance para a classe "smoke" em mAP50-90, uma possível causa foi o número reduzido de base-images do tipo "smoke" disponíveis para treinamento pois a maioria das imagens do tipo "smoke" foram geradas aplicando data augmentation sobre as base-images. Portanto o resultado de map50-90 indica a necessidade de obtermos um maior número de base-images. O script desenvolvido para data aumentation está disponível [aqui](./util_scripts)
+Na imagem a seguir apresentamos a estatística do modelo para o conjunto de validação. O modelo apresentou resultados satisfatórios para a métrica mAP50. Também notamos uma redução de performance para a classe "smoke" em mAP50-90, uma possível causa foi o número reduzido de base-images do tipo "smoke" disponíveis para treinamento pois a maioria das imagens do tipo "smoke" foram geradas aplicando data augmentation sobre as base-images. Portanto o resultado de map50-90 indica a necessidade de obtermos um maior número de base-images. O script desenvolvido para data aumentation está disponível [aqui](./util_scripts/data_augmentation.py)
 
 <p align="center">
    <img width="700" src="doc/result_valid.png">
