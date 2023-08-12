@@ -100,12 +100,11 @@ Na imagem a seguir apresentamos a estatística do modelo para o conjunto de vali
    <img width="700" src="doc/result_valid.png">
 </p>
 
-A figura a seguir mostra um exemplo dos objetos localizados
+A figura a seguir mostra um exemplo dos objetos localizados pelo model
 
 <p align="center">
    <img width="700" src="doc/obj_detected.jpg">
 </p>
-
 
 
 ## Step 4. Reprodutibilidade
