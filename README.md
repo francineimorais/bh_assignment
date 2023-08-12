@@ -78,7 +78,7 @@ Finally, all images were resized to 640x640 and the child seat and smoke objects
    <img width="700" src="doc/YoLo_Label.png">
 </p>
 
-The database for this project is available [here](./dataset/).
+The database for this project is available [here](https://drive.google.com/file/d/1ZuHOVFbKvS60rrRuPWGQ0Qc27awLGhbG/view?usp=drive_link).
 
 ## Step 2. Model training
 ### Using Google Colab (recommended)
