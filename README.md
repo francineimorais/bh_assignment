@@ -118,7 +118,7 @@ The tasks that required the most time to complete the project were:
 * support scripts (ex: data augmentation)
 * Documentation (README.md)
 
-We consider that the results obtained by the model, as well as the documentation and files generated, are in accordance with the information specified in the project scope.
+We consider that the model performance, as well as the documentation and files generated, are in accordance with the project scope.
 
 ## Future works
 * Evaluation of frameworks for generating synthetic data, with the objective of generating data containing smoke.
