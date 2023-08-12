@@ -75,7 +75,7 @@ Due to the project deadline, it was not possible to evaluate/use the frameworks 
 Finally, all images were resized to 640x640 and the child seat and smoke objects were manually labeled using the program available [here](https://github.com/developer0hye/Yolo_Label). It is important to note that object detection systems are trained in a supervised way, and therefore need labeled data so that they can calculate their performance metrics. It is also important to point out that the structure of the labels file change depending on the framework we use to train the object detector. Therefore, if we intend to train a model based on YoLo, it is necessary to generate the label files following the pattern expected by YoLo.
 
 <p align="center">
-   <img width="300" src="doc/YoLo_Label.png">
+   <img width="700" src="doc/YoLo_Label.png">
 </p>
 
 The database for this project is available [here](./dataset/)  
@@ -100,9 +100,16 @@ Na imagem a seguir apresentamos a estatística do modelo para o conjunto de vali
    <img width="700" src="doc/result_valid.png">
 </p>
 
+A figura a seguir mostra um exemplo dos objetos localizados
+
+<p align="center">
+   <img width="700" src="doc/obj_detected.jpg">
+</p>
+
+
 
 ## Step 4. Reprodutibilidade
-Focusing on the reproducibility of the work, we made available the trained models for this project. They are available in the folder [custom_models](https://github.com/francineimorais/bh_assignment/tree/main/custom_models). We also provide the notebook containing the code for training and inference.
+Focusing on the reproducibility of the work, we made available the trained models for this project. They are available in the folder [custom_models](https://github.com/francineimorais/bh_assignment/tree/main/custom_models/runs/detect/train/weights). We also provide the notebook containing the code for training and inference.
 
 ## Step 5. Conclusions
 In the presented work, we developed an object detection model based on AI and image processing. The model was trained for child seat and smoke in vehicle detection. The model achieved mAP = PUT VALUE HERE.
