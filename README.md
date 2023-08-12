@@ -118,16 +118,18 @@ The tasks that required the most time to complete the project were:
 * support scripts (ex: data augmentation)
 * Documentation (README.md)
 
+We consider that the results obtained by the model, as well as the documentation and files generated, are in accordance with the information specified in the project scope.
+
 ## Future works
 * Evaluation of frameworks for generating synthetic data, with the objective of generating data containing smoke.
-* Use a larger number of child seat images for training [disponíveis em](https://sviro.kl.dfki.de/).
+* Use a larger number of child seat images for [training](https://sviro.kl.dfki.de/).
 * Train TensorFlow-based models and compare with YoLo-based models. 
 
 ## FAQs
 <details>
 <summary>Can YoLo only be used for object detection tasks?</summary>
 <br>
-In addition to object detection, it is also possible to train YoLo-based models to perform tasks such as segmentation, classification, and pose estimation. More information is available at [link](https://docs.ultralytics.com/tasks/).
+In addition to object detection, it is also possible to train YoLo-based models to perform tasks such as segmentation, classification, and pose estimation. More information is available at: https://docs.ultralytics.com/tasks/
 </details>
 
 <details>
