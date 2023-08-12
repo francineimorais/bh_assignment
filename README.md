@@ -100,7 +100,7 @@ In the following image, we present the model statistics for the validation set. 
    <img width="700" src="doc/result_valid.png">
 </p>
 
-The following figure shows results of objects of type "child-seat" and "smoke" detected by the model
+The following figure shows results of objects of type "child-seat" and "smoke" detected by the custom model
 
 <p align="center">
    <img width="700" src="doc/obj_detected.jpg">
