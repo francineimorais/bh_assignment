@@ -72,7 +72,11 @@ There are several frameworks that provide pre-trained AI models that can be appl
 
 Due to the project deadline, it was not possible to evaluate/use the frameworks presented in the links above for the generation of synthetic images. We leave this as future work.
 
-Finally, all images were resized to XxY and the child seat and smoke objects were manually labeled using the program available [here](https://github.com/developer0hye/Yolo_Label). It is important to note that object detection systems are trained in a supervised way, and therefore need labeled data so that they can calculate their performance metrics. It is also important to point out that the structure of the labels file change depending on the framework we use to train the object detector. Therefore, if we intend to train a model based on YoLo, it is necessary to generate the label files following the pattern expected by YoLo.
+Finally, all images were resized to 640x640 and the child seat and smoke objects were manually labeled using the program available [here](https://github.com/developer0hye/Yolo_Label). It is important to note that object detection systems are trained in a supervised way, and therefore need labeled data so that they can calculate their performance metrics. It is also important to point out that the structure of the labels file change depending on the framework we use to train the object detector. Therefore, if we intend to train a model based on YoLo, it is necessary to generate the label files following the pattern expected by YoLo.
+
+<p align="center">
+   <img width="300" src="doc/YoLo_Label.png">
+</p>
 
 The database for this project is available [here](./dataset/)  
 
@@ -90,12 +94,12 @@ Open the Colab notebook in your browser by clicking the icon above. Work through
 
 One popular method for measuring object detection model accuracy is "mean average precision" (mAP). Basically, the higher the mAP score, the better your model is at detecting objects in images. To learn more about mAP, read through this article from [Roboflow](https://blog.roboflow.com/mean-average-precision/).
 
-Na imagem a seguir apresentamos a estatística do nosso modelo para o conjunto de validação. O modelo treinado apresentou resultados satisfatórios para a métrica mAP
+Na imagem a seguir apresentamos a estatística do modelo para o conjunto de validação. O modelo apresentou resultados satisfatórios para a métrica mAP50. Também notamos uma redução de performance para a classe "smoke" em mAP50-90, uma possível causa foi o número reduzido de base-images do tipo "smoke" disponíveis para treinamento pois a maioria das imagens do tipo "smoke" foram geradas aplicando data augmentation sobre as base-images. Portanto o resultado de map50-90 indica a necessidade de obtermos um maior número de base-images. O script desenvolvido para data aumentation está disponível [aqui](./util_scripts/data_augmentation.py)
+
 <p align="center">
    <img width="700" src="doc/result_valid.png">
 </p>
 
-Justificar o valor encontrado para a performance do modelo que treinamos. Muito dessa performance está relacionada com a limitação da base de dados.
 
 ## Step 4. Reprodutibilidade
 Focusing on the reproducibility of the work, we made available the trained models for this project. They are available in the folder [custom_models](https://github.com/francineimorais/bh_assignment/tree/main/custom_models). We also provide the notebook containing the code for training and inference.
