@@ -90,8 +90,9 @@ Open the Colab notebook in your browser by clicking the icon above. Work through
 
 One popular method for measuring object detection model accuracy is "mean average precision" (mAP). Basically, the higher the mAP score, the better your model is at detecting objects in images. To learn more about mAP, read through this article from [Roboflow](https://blog.roboflow.com/mean-average-precision/).
 
+Na imagem a seguir apresentamos a estatística do nosso modelo para o conjunto de validação. O modelo treinado apresentou resultados satisfatórios para a métrica mAP
 <p align="center">
-   <img width="300" src="doc/result_valid.png">
+   <img width="700" src="doc/result_valid.png">
 </p>
 
 Justificar o valor encontrado para a performance do modelo que treinamos. Muito dessa performance está relacionada com a limitação da base de dados.
