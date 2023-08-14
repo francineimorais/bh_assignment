@@ -121,7 +121,7 @@ The tasks that required the most time to be completed:
 We consider that the model performance, as well as the documentation and files generated, are in accordance with the project scope.
 
 ## Future works
-* Evaluation of frameworks for generating synthetic data, with the objective of generating data containing smoke.
+* Evaluation of frameworks for synthetic generation of smoke images.
 * Use a larger number of child seat images for [training](https://sviro.kl.dfki.de/).
 * Train TensorFlow-based models and compare with YoLo-based models. 
 
